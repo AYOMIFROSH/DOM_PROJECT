@@ -1,0 +1,11 @@
+/*{
+    padding:0;
+    margin:auto; 
+}*/
+
+.main{
+    display: flex;
+}
+img{
+    font-size: 40px;
+}
