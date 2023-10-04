@@ -2,13 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X -UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="main">
-        <img src="./DOM-Image.jpg" alt=" ">
-    </div>
+    <!--actually i thought of making side cart(SMILE)-->
+    <div class="sidecart">
+        <div class="cart_content"></div>
+        <!--here is the cart header-->
+        <div class="cart_header">
+            <img src="images/DOM-Image.jpg" alt="" style="width: 30px" /> 
+            <div class="header_title">
+                <h2>Your Cart</h2>
+                <span id="items_number">4</span>
+            </div>
+        </div>
+        <!--now the cart items -->
+        <div class="cart_items"></div>
+        <!--now the cart Actions "my head dey swell (smile)"-->
+        <div class="cart_action"></div>
 </body>
 </html>

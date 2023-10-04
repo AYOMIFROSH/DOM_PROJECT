@@ -1,11 +1,34 @@
-/*{
-    padding:0;
-    margin:auto; 
-}*/
-
-.main{
-    display: flex;
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
-img{
-    font-size: 40px;
+
+:root {
+    --accent-color: #808080;
+    --light-gray: rgba(0, 0, 0, 0.1);
+}
+
+body{
+    min-height: 100vh;
+    background-color: #f0ebeb;
+    overflow-x: hidden;
+}
+
+/*side cart*/
+.sidecart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 350px;
+    background-color: #fff;
+    box-shadow: -10px 0 15px var(--light-gray);
+}
+
+.cart_content {
+    height: 10px;
+    display: flex;
+    flex-direction: column;
 }
