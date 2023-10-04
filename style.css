@@ -74,7 +74,7 @@ body{
 }
 
 /*cart items*/
-.cart_items {
+.cart_items{
     flex: 1;
     overflow-x: hidden;
 }
