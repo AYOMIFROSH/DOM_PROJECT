@@ -6,8 +6,12 @@
 }
 
 :root {
-    --accent-color: #808080;
+    --accent-color: #FF0000;
     --light-gray: rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    opacity: 0.8;
 }
 
 body{
@@ -31,4 +35,82 @@ body{
     height: 10px;
     display: flex;
     flex-direction: column;
+}
+
+/* Cart Header*/
+.cart_header {
+    padding: 1rem;
+    border-bottom: 1px solid var(--light-gray);
+    display: flex;justify-content: space-between;
+    align-items: center;
+}
+
+.header_title {
+    position: relative;
+}
+
+.header_title span {
+    position:absolute;
+    top: -14px;
+    right: -20px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart_header .close_btn {
+    font_size: 2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.cart_header .close_btn:hover {
+    transform: scale(1.1)
+}
+
+/*cart items*/
+.cart_items {
+    flex: 1;
+    overflow-x: hidden;
+}
+
+/* cart acctions*/
+.cart_actions {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid var(--light-gray);
+    box-shadow: 0 -5px 10px var(--light-gray);
+}
+
+.cart_actions .subtotal {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.cart_actions button {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.cart_actions button:nth-of-type(2) {
+    background-color: var(--accent-color);
 }
