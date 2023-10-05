@@ -2,28 +2,28 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X -UA-Compatible" content="IE-edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
         <title>Shopping Cart</title>
         <link rel="stylesheet" href="./style.css">
         <script src="script.js" defer></script>
     </head>
     <body>
-        <!--actually i thought of making side cart(SMILE)-->
+        <!-- side cart -->
         <div class="sidecart">
             <div class="cart_content">
-                <!--here is the cart header-->
+                <!-- cart header -->
                 <div class="cart_header">
-                    <img src="images/CartIcon.jpg" alt="" style="width: 30px" /> 
+                    <img src="images/CartIcon.jpg" alt="" style="width: 30px;" />
                     <div class="header_title">
                         <h2>Your Cart</h2>
                         <span id="items_num">4</span>
                     </div>
                     <span id="close_btn" class="close_btn">&times;</span>
                 </div>
-                <!--now the cart items -->
+                <!-- cart items -->
                 <div class="cart_items">
-                    <!--item 1-->
+                    <!-- item1 -->
                     <div class="cart_item">
                         <div class="remove_item">
                             <span>&times;</span>
@@ -31,13 +31,23 @@
                         <div class="item_img">
                             <img src="images/DOM-Image.jpg" alt="">
                         </div>
+                        <div class="item_details">
+                            <p>Bluetooth Ultra Thin Wireless Mouse 2.4G Charging Black</p>
+                            <strong>#1100</strong>
+                            <div class="qty">
+                                <span>-</span>
+                                <strong>1</strong>
+                                <span>+</span>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!--now the cart Actions-->
-                <div class="cart_actions">
+                <!-- cart actions -->
+                <div class="cart_Actions">
                     <div class="subtotal">
                         <p>SUBTOTAL:</p>
-                        <P>#<span id="subtotal_price">3896</span></P>
+                        <p>#<span id="subtotal_price">3990</span></p>
                     </div>
                     <button>View Cart</button>
                     <button>Checkout</button>
