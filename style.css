@@ -6,7 +6,7 @@
 }
 
 :root {
-    --accent-color: #FF0000;
+    --accent-color: #0800ff;
     --light-gray: rgba(0, 0, 0, 0.1);
 }
 
@@ -24,6 +24,7 @@ body{
     border: none;
     background-color: var(--accent-color);
     padding: 10px;
+    
 }
 
 /*side cart*/
