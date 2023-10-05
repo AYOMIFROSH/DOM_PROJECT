@@ -34,17 +34,73 @@ body{
     cursor: pointer;
 }
 
+/* items */
+.items {
+    padding: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.items .item {
+    width: 185px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.items .item img {
+    width: 100%;
+}
+
+.items .item button{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/*Backdrop*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.backdrop.show {
+    display: block;
+    opacity: 1;
+}
+
 /*side cart*/
 .sidecart{
     position: fixed;
     top: 0;
     right: 0;
+
     height: 100vh;
     width: 320px;
     background-color: #fff;
     box-shadow: -10px 0 15px var(--light-gray);
     transform: translateX(110%);
     transition: transform 0.5s ease-in-out;
+    z-index: 2;
 }
 
 .sidecart.open {
