@@ -6,7 +6,7 @@
 }
 
 :root {
-    --accent-color: #0800ff;
+    --accent-color: #FF0000;
     --light-gray: rgba(0, 0, 0, 0.1);
 }
 
@@ -21,10 +21,17 @@ body{
 }
 
 #open_cart_btn {
+    position:absolute;
+    top: 10px;
+    right: 10px;
     border: none;
     background-color: var(--accent-color);
     padding: 10px;
-    
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 /*side cart*/
@@ -37,6 +44,7 @@ body{
     background-color: #fff;
     box-shadow: -10px 0 15px var(--light-gray);
     transform: translateX(110%);
+    transition: transform 0.5s ease-in-out;
 }
 
 .sidecart.open {
