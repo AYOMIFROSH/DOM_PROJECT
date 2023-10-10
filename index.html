@@ -9,6 +9,43 @@
         <script src="script.js" defer></script>
     </head>
     <body>
+        <!--this is a header-->
+    <header class="mountain">
+        <h1><i>Temmy's Store</i></h1>
+    </header>
+
+    <!--the use of the <nav> tag, the unordered list <ul>, the bold <b> and the italic format <i>-->
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="/page.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">contact</a></li>
+            </ul>
+
+        <ul class="Login-menu">
+            <li><a href="/signup.html">signup</a></li>
+            <li><a href="/login.html">login</a></li>
+        </ul>
+        </nav>
+
+        <form class="crown">
+            <label for="search"></label>
+            <b> <input type = "text" name = " "/></b>
+            <button type="text" class="btn btn-primary">Submit</button>
+        </form>
+
+        <div class="slope">
+        <!--i use the <select> tag here to create a drop down-list for my page-->
+            <label for="Blog">Checkout</label>
+        <select onchange="window.loctaion.assing(this.value)">
+            <option href="https://github.com/AYOMIFROSH/">story</option>
+            <option value="https://www.theverge.com/tech">technologies</option>
+            <option value="Television series">series</option>
+            <option value="log out">sign out</option>
+        </select>
+        </div>
+
+
         <!-- open btn -->
         <button id="open_cart_btn">
             <img src="images/CartIcon.jpg" alt="" style="width: 30px" />

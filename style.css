@@ -10,6 +10,64 @@
     --light-gray: rgba(0, 0, 0, 0.1);
 }
 
+.navbar{
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 3px gray;
+    box-shadow: 2px 2px 35px 2px #8a8a1d;
+    padding: 12px 28px;
+    font-weight: 700;
+    font-size: small;
+    align-items: center;
+    letter-spacing: 3px;
+    flex-direction: row;
+}
+
+.login-menu{
+    display: inline-flex;
+}
+
+.navbar i{
+    color:tomato;
+}
+
+.navbar .menu, .login-menu{
+    display: flex;
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar .menu a, .login-menu li{
+    margin-right:38px;
+    text-decoration: none;
+    color:rgb(75, 75, 44)
+}
+
+.navbar .login-menu{
+    display: flexs;
+}
+
+.crown{
+    top:170px;
+    position: absolute;
+    right:40px;
+    align-items: center;
+}
+
+.slope{
+    top:170px;
+    position: absolute;
+    left:40px;
+    align-items: center;
+}
+
+.mountain{
+    color:  var(--accent-color);
+}
+
 button:hover {
     opacity: 0.8;
 }
